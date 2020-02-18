@@ -26,5 +26,16 @@ if (((year % 4 === 0) && (year % 100 !== 0)) ||
 }
 
 //VD: nhập vào số tháng, in ra số ngày của tháng.
-let month = Number(prompt("nhập vào tháng:"));
-if(month )
+let month = parseInt(prompt("nhập vào tháng:"));
+if(month === 1 || month === 3 || month === 5 || month ===7 || month === 8 || month === 10 || month = 12) {
+    console.log(month + "31 ngày");    
+}else if (month === 2) {
+    console.log( month +" 28 hoặc 29 ngày");
+} else if( month === 4 || month === 6 || month === 9 || month ===11) {
+    console.log("30 ngày");
+    
+}else{
+    console.log("Nhập sai");
+    
+}
+
