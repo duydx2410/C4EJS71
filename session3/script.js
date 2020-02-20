@@ -15,10 +15,10 @@
 // let welcome1 = `${welcome} C4EJS71`;
 // console.log(welcome1);
 
-let x = 10;
-let y = 4 * (x * x + 10 * x * Math.sqrt(x * x + 3 * x + 1));//Math.sprt(x): tính căn bậc 2.
-alert(y);
-console.log(y);
+// let x = 10;
+// let y = 4 * (x * x + 10 * x * Math.sqrt(x * x + 3 * x + 1));//Math.sprt(x): tính căn bậc 2.
+// alert(y);
+// console.log(y);
 
 //String: chuỗi
 // let name = prompt("Nhập tên của bạn:");
@@ -56,19 +56,24 @@ console.log(y);
 // console.log(`Diện tích hình tròn là: ${S} `);
 
 //VD2: Nhập chiều dài, chiều rộng hình chữ nhật. Tính chu vi, diện tích:
-let a = Number(prompt("Nhập vào chiều rộng:"));
-let b = Number(prompt("Nhập chiều dài:"));
-let P1 = 2 * (a + b);
-let S2 = a * b;
-console.log("Chu vi hình chữ nhật: " + P1 );
-console.log("Diện tích hình chữ nhật: " + S2);
+// let a = Number(prompt("Nhập vào chiều rộng:"));
+// let b = Number(prompt("Nhập chiều dài:"));
+// let P1 = 2 * (a + b);
+// let S2 = a * b;
+// console.log("Chu vi hình chữ nhật: " + P1 );
+// console.log("Diện tích hình chữ nhật: " + S2);
 
-// KIểm tra xem là kiểu dữ liệu gì:
-console.log(typeof a);
-let name = "abc";
-console.log(typeof name);
-console.log(typeof 5);
-console.log(typeof "abc");
+// // KIểm tra xem là kiểu dữ liệu gì:
+// console.log(typeof a);
+// let name = "abc";
+// console.log(typeof name);
+// console.log(typeof 5);
+// console.log(typeof "abc");
+
+
+let yourMoney = Number(import("Nhập mệnh giá tiền:"));
+let A = yourMoney - 100000 ;
+console.log(A);
 
 
 
