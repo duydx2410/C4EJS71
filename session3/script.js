@@ -71,9 +71,7 @@
 // console.log(typeof "abc");
 
 
-let yourMoney = Number(import("Nhập mệnh giá tiền:"));
-let A = yourMoney - 100000 ;
-console.log(A);
+
 
 
 
