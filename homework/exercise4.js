@@ -75,23 +75,18 @@
 //Bài tập 5: nhập vào 3 số a, b, c. kiểm tra xem có lập được thành tam giác không, nếu được thì tam giá đó là tam giác gì:
 
 
-let a = parseInt(prompt("Nhập vào giá trị của a:"));
-let b = parseInt(prompt("Nhập vào giá trị cảu b:"));
-let c = parseInt(prompt("Nhập vào giá trị của c:"));
-if ((a+b>c) && (a+c>b) && (b+c>a)) {
-console.log(`${a}, ${b}, ${c} Tạo được tam giác.`)
-}
-if (((a===b) && (a!==c)) || ((b===c) && (a!==b)) || ((a===c) && (c!==a)) && ((a+b>c) && (a+c>b) && (b+c>a))) {
-console.log("Và là tam giác cân.")
-}
-else if ((a===b) && (b===c)) && ((a+b>c) && (a+c>b) && (b+c>a)) {
-console.log("Và là tam giác đều.")
-}
-else if ((a*a === b*b + c*c) || (b*b === a*a + c*c) || (c*c === a*a + b*b)) {
-console.log("Và là tam giác vuông.")
-}
-else {console.log("đây ko phải tam giác.")
-}
+// let a = parseInt(prompt("Nhập vào giá trị của a:"));
+// let b = parseInt(prompt("Nhập vào giá trị cảu b:"));
+// let c = parseInt(prompt("Nhập vào giá trị của c:"));
+// if ((a+b>c) && (a+c>b) && (b+c>a)) {
+// console.log(`${a}, ${b}, ${c} Tạo được tam giác.`)
+// }
+// if ((a*a === b*b + c*c) || (b*b === a*a + c*c) || (c*c === a*a + b*b)) {
+// console.log("Và là tam giác vuông.")
+// }
+// if (a===b)
+// else {console.log("đây ko phải tam giác.")
+// }
 
 // //Bài tập 6: Cho thông tin bảng giá điện, nhập vào số điện sử dụng của 1 hộ trong 1 tháng, in ra số tiênf từng bậc và tổng số tiền phải trả.
 // let numberElectric = parseInt(prompt("Nhập vào số điện tiêu thụ trong tháng: (kWh)"));
@@ -141,7 +136,17 @@ else {console.log("đây ko phải tam giác.")
 //  Tổng tiền điện là: ${bac1max+bac2max+bac3max+bac4max+bac5max+((numberElectric-400)*2927)} vnđ`)
 // };
 
-//Bài tập 7: Nhập vào chiều cao, cân nặng. tính chỉ số BMI, và đưa ra tình trạng theo cấp độ.
+
+//Cách khác:
+
+let x = parseInt(prompt("Nhập số điện"));
+let y;
+if (x<=50) {
+    y = x * 1678
+}
+
+
+// Bài tập 7: Nhập vào chiều cao, cân nặng. tính chỉ số BMI, và đưa ra tình trạng theo cấp độ.
 
 // let hight = parseFloat(prompt("Nhập vào chiều cao của bạn: m"));
 // let weigth = parseFloat(prompt("Nhập vào cân nặng của bạn: kg"));
