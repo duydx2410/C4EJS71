@@ -78,15 +78,29 @@
 // let a = parseInt(prompt("Nhập vào giá trị của a:"));
 // let b = parseInt(prompt("Nhập vào giá trị cảu b:"));
 // let c = parseInt(prompt("Nhập vào giá trị của c:"));
-// if ((a+b>c) && (a+c>b) && (b+c>a)) {
+// if (
+//        (a+b>c) 
+//     && (a+c>b) 
+//     && (b+c>a)) {
 // console.log(`${a}, ${b}, ${c} Tạo được tam giác.`)
 // }
-// if ((a*a === b*b + c*c) || (b*b === a*a + c*c) || (c*c === a*a + b*b)) {
+// if 
+//    ((a*a === b*b + c*c)
+//  || (b*b === a*a + c*c) 
+//  || (c*c === a*a + b*b))  {
 // console.log("Và là tam giác vuông.")
 // }
-// if (a===b)
-// else {console.log("đây ko phải tam giác.")
+// else if ((a===b) && (b===c)) {
+// console.log("Là tam giác đều");
 // }
+// else if (
+//    ((a===b) && (a!==c)) 
+// || ((b===c) && (a!==b)) 
+// || ((a===c) && (a!==b))) {
+// console.log("là tam giác cân")
+// }
+// else {"không tạo đc tam giác"}
+
 
 // //Bài tập 6: Cho thông tin bảng giá điện, nhập vào số điện sử dụng của 1 hộ trong 1 tháng, in ra số tiênf từng bậc và tổng số tiền phải trả.
 // let numberElectric = parseInt(prompt("Nhập vào số điện tiêu thụ trong tháng: (kWh)"));
@@ -139,27 +153,27 @@
 
 //Cách khác:
 
-let x = parseInt(prompt("Nhập số điện"));
-let y;
-if (x<=50) {
-    y = x * 1678
-}
-else if (x<=100) {
-    y = 50*1678 + (x-50)*1734
-}
-else if (x<=200) {
-    y = 50*(1678+1734) + (x-100)*2014
-}
-else if (x<=300) {
-    y = 50*(1678+1734) + 100*2014 + (x-200)*2536
-}
-else if (x<=400) {
-    y = 50*(1678+1734) + 100*(2014+2536) + (x-300)*2834
-}
-else {
-    y = 50*(1678+1734) + 100*(2014+2536+2834) + (x-400)*2927
-} ;
-console.log(`Số tiền điện phải trả là: ${y}`);
+// let x = parseInt(prompt("Nhập số điện"));
+// let y;
+// if (x<=50) {
+//     y = x * 1678
+// }
+// else if (x<=100) {
+//     y = 50*1678 + (x-50)*1734
+// }
+// else if (x<=200) {
+//     y = 50*(1678+1734) + (x-100)*2014
+// }
+// else if (x<=300) {
+//     y = 50*(1678+1734) + 100*2014 + (x-200)*2536
+// }
+// else if (x<=400) {
+//     y = 50*(1678+1734) + 100*(2014+2536) + (x-300)*2834
+// }
+// else {
+//     y = 50*(1678+1734) + 100*(2014+2536+2834) + (x-400)*2927
+// } ;
+// console.log(`Số tiền điện phải trả là: ${y}`);
 
 
 
