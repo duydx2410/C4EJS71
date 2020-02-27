@@ -133,11 +133,11 @@
 
 //Bài 15: Yêu cầu người dùng nhập mật khẩu có ký tự đặc biệt ($,%,_),và lớn hơn 8 ký tự,thiếu điều kiện bắt nhập lại.
 
-let pass = prompt("Nhập mật khẩu:");
-while (!(pass.length >=8 && pass.search("@") >=0)) {
-    pass = prompt("Nhập lại pass:")
-}
-console.log(pass);
+// let pass = prompt("Nhập mật khẩu:");
+// while (!(pass.length >=8 && pass.search("@") >=0)) {
+//     pass = prompt("Nhập lại pass:")
+// }
+// console.log(pass);
 
 
 
