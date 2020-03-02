@@ -140,4 +140,25 @@
 // console.log(pass);
 
 
+//Ví dụ break vs continues
+
+//continues:
+// let n = 10;
+// for( let i = 0; i <= n; i++) {
+//     if(i % 2 === 1) {
+//         continue; // bỏ qua 1 lượt lặp hiện tại
+//     }
+//     console.log(i);
+// }
+
+//Break:
+// let n = 10;
+// for( let i = 0; i <= n; i++) {
+//     if(i % 2 === 1) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+
 
