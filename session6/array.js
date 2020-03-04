@@ -81,71 +81,95 @@
 //VD:
 //1: khai báo mảng rỗng: yêu cầu người dùng nhập 5 số vào mảng
 
-let arr = [];
-let length = 5;
-for (let i = 0; i < length; i++) {
-    let n = parseInt(prompt("Nhập 1 số:"));
-    arr.push(n);
-    //arr[i] = n; ko nên dùng
-}
+// let arr = [];
+// let length = 5;
+// for (let i = 0; i < length; i++) {
+//     let n = parseInt(prompt("Nhập 1 số:"));
+//     arr.push(n);
+//     //arr[i] = n; ko nên dùng
+// }
 
-//2: In giá trị của mảng ra từng dòng.
+// //2: In giá trị của mảng ra từng dòng.
 
-console.log("STT: Giá trị");
-for (let i = 0; i < arr.length; i++) {
-    console.log(` ${i+1} :  ${arr[i]}`);
-}
+// console.log("STT: Giá trị");
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(` ${i+1} :  ${arr[i]}`);
+// }
 
-//3: Tính tổng giá trị của mảng
-console.log("=====Tổng=====");
-let S = 0;
-for (let i = 0; i < arr.length; i++) {
-    S = S + arr[i]  
-}
-console.log(` Tổng: ${S}`);
+// //3: Tính tổng giá trị của mảng
+// console.log("=====Tổng=====");
+// let S = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     S = S + arr[i]  
+// }
+// console.log(` Tổng: ${S}`);
 
-//   Tính trung bình.
-console.log(` Trung bình: ${S/arr.length}`);
+// //   Tính trung bình.
+// console.log(` Trung bình: ${S/arr.length}`);
 
-//4: Yêu cầu nhập 1 số N: 
-//-a: Kiểm tra số N có trong mảng không.
-let isExist = false;
-let N = Number(prompt("Nhập giá trị N:"));
+// //4: Yêu cầu nhập 1 số N: 
+// //-a: Kiểm tra số N có trong mảng không.
+// let isExist = false;
+// let N = Number(prompt("Nhập giá trị N:"));
 
-for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    if(element === N){
-        isExist = true;
-        break;
-    }   
-}
-if (isExist) {
-    console.log("Có tồn tại");
-} else {
-    console.log("Không tồn tại");   
-}
+// for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+//     if(element === N){
+//         isExist = true;
+//         break;
+//     }   
+// }
+// if (isExist) {
+//     console.log("Có tồn tại");
+// } else {
+//     console.log("Không tồn tại");   
+// }
 
-//-b: In ra các số thuộc mảng < N
-for (let i = 0; i < N; i++) {
-    const element = array[i];
+// //-b: In ra các số thuộc mảng < N
+// for (let i = 0; i < N; i++) {
+//     const element = array[i];
+    
+// }
+// if(arr[i] < N) {
+//     console.log(arr[i]);
+// }
+
+
+// //5: cho người dùng nhập 1 vị trí và 1 giá trị, update giá trị này váo vị trí đó. 
+
+// let Stt = parseInt(prompt("Vị trí muốn sửa:"));
+// while (Stt<1 ||Stt >= arr.length){
+//     Stt = parseInt(prompt("Nhập đúng số thứ tự: "));
+// }
+// arr[Stt - 1] = Number(prompt("Nhập giá trị mới: "));
+
+
+
+// // Sắp xếp rồi in ra màn hình: (hàm sort) or thuật toán
+// // Hàm sort:
+// arr.sort();//tăng dần.
+// arr.reverse(); // đảo ngược thứ tự để tạo giảm dần.
+// // Thuật toán:
+let arr = [6,7,3,2,9];
+
+for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) // lấy sau vị trí 1 cấp, =>
+     {
+         if (arr[i] > arr[j]) {
+             //đổi chỗ
+             let temp = arr[i];
+             arr[i] = arr[j];
+             arr[j] = temp;
+         }
+        
+    }
     
 }
-if(arr[i] < N) {
-    console.log(arr[i]);
-}
-
-
-//5: cho người dùng nhập 1 vị trí và 1 giá trị, update giá trị này váo vị trí đó. 
-
-let Stt = parseInt(prompt("Vị trí muốn sửa:"));
-while (Stt<1 ||Stt >= arr.length){
-    Stt = parseInt(prompt("Nhập đúng số thứ tự: "));
-}
-arr[Stt - 1] = Number(prompt("Nhập giá trị mới: "));
+console.log(arr);
+// muốn sắp xếp ngước lại thì đảo dấu.
 
 
 
-// Sắp xếp rồi in ra màn hình: (hàm sort) or thuật toán
 
 
 
