@@ -161,4 +161,164 @@
 // }
 
 
+//1: In ra các số từ 0 -> 100:
+// for (let i = 0; i <= 100 ; i++) {   
+//     console.log(i);   
+// }
+
+//2: In ra các số từ 100 -> 0 :
+
+// for (let i = 100; i >= 0; i--) {
+//     console.log(i);  
+// }
+
+//3: In ra các số chẵn lẻ từ 0 -> 100
+// Số chẵn:
+
+// for (let i = 0; i <= 100; i+=2) {
+//     console.log(i);   
+// }
+
+// Số lẻ:
+
+// for (let i = 1; i <= 100; i+=2) {
+//     console.log(i);   
+// }
+
+//4: in ra các số chẵn , lẻ từ 100 -> 0:
+// Số chẵn:
+
+// for (let i = 100; i >= 0; i-=2) {
+//     console.log(i);   
+// }
+
+// Số lẻ:
+
+// for (let i = 99; i >= 0; i-=2) {
+//     console.log(i);   
+// }
+
+//5: Thực hiện tính tổng: S = 1 + 2 + 3 + ... + N, với N nhập từ bàn phím:
+
+// let N = parseInt(prompt("Nhập giá trị của N:"));
+// let S = 0;
+// for (let i = 0; i <= N; i++) {
+//     S = S + i;   
+// }
+// console.log(` Tổng S = ${S} với N = ${N}`);
+
+//6: S = 1 + 3 + 5 + ... + 2N + 1
+
+// let N = parseInt(prompt("Nhập giá trị của N:"));
+// let S = 0;
+// for (let i = 0; i <= N; i++) {
+//     S += (2 * i + 1)
+// }
+// console.log(S);
+
+//7: S = 2 + 4 + 6 + ... + 2N
+
+// let n = parseInt(prompt("Nhập giá trị N:"));
+// let s = 0;
+// for (let i = 0; i <= n; i++) {
+//     s += 2*i
+// }
+// console.log(s);
+
+// 8: S = 1/1 + 1/2 + 1/3 + ... + 1/N
+// let n = parseInt(prompt("Nhập giá trị N:"));
+// let S = 0;
+// for(let i = 1; i <= n; i++) {
+//     S = S + 1/i;
+// }
+// console.log(S);
+
+//9: S = 1/1*2 +1/2*3 + ... + 1/N*(N+1)
+
+// let n = parseInt(prompt("Nhập giá trị N:"));
+// let S = 0;
+// for (let i = 1; i <= n; i++) {
+//     S = S + 1/(i * (i + 1))
+// }
+// console.log(S);
+
+//10: dãy số Fibonacci: 1,1,2,3,5,... 
+// let n = parseInt(prompt("nhập giá trị n:"))
+// let f1 = 1;
+// let f2 = 1;
+// let count = 2;
+// for (let i = 1; i < n/2; i++) {
+//     f1 = f1 + f2;
+//     count++;
+//     f2 = f2 + f1;
+//     count++;
+// }
+// console.log(`F${count - 1}: ${f1}   F${count}: ${f2}`);
+
+//In hình chữ nhật *
+// let a = parseInt(prompt("Nhập vào chiều dài hình chữ nhật:"));
+// let b = parseInt(prompt("Nhập vào chiều rộng hình chữ nhật:"));
+// let s = "";
+// for (let i = 0; i < a; i++) {
+//     s = s + "*";   
+// }
+// let p = "";
+// for (let i = 0; i < b; i++) {
+//     p += s + "\n";
+// }
+// console.log(p);
+
+
+// In hình tam giác
+
+// let a = parseInt(prompt("Nhập a:"));
+// let s = "";
+// for (let i = 1; i <= a; i++) {
+//     s = s + "*";   
+//     console.log(s);
+// }
+
+// 13,14: Yêu cầu người dụng nhập mật khẩu, nếu < 8  ký tự. yêu cầu nhập lại.
+
+// let pass = prompt("Nhập mật khẩu:");
+// while (pass.length<8) { 
+//     pass = prompt("Mật khẩu quá ngắn, nhập lại:")
+// }
+// console.log(pass);
+
+//15:Yêu cầu người dùng nhập mật khẩu chứa đồng thời 3 kí tự($,%,_) và dài hơn 8 ký tự. thiếu điều kiện nào yêu cầu nhập lại.
+
+// let pass = prompt("Nhập mật khẩu:");
+// while (!((pass.length >= 8) && (pass.search("$") > 0))) {
+//     pass = prompt("Mật khẩu chưa đủ điều kiện, nhập lại:")
+// }
+// console.log(pass);
+
+//16, kiểm tra số chính phương
+
+// let n = parseInt(prompt("Nhập 1 số"));
+// let soUoc = 0;
+// for (let i = 1; i < n; i++) {
+//     if( n % i ===0) {
+//         console.log(soUoc);
+//         soUoc++;
+//         if (soUoc > 2) {
+//             break;
+//         }
+//     }
+    
+// }
+// if (soUoc > 2) {
+//     console.log(`${n} là Hợp số:`); 
+// }
+// else {
+//     console.log(`${n} là số nguyên tố.`);
+    
+// }
+
+
+
+
+
+
 

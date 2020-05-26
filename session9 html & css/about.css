@@ -1,0 +1,15 @@
+.go-home{
+    padding: 20px;
+    border: 2px solid green;
+    background-color: greenyellow;
+    text-decoration: none;
+    /* bỏ gạch chân */
+    text-transform: uppercase;
+    /* chuyển chữ hoa */
+    color: hotpink;
+    font-weight: bold;
+}
+.go-home:hover{
+    color: ivory;
+    background-color: rgb(1, 255, 1);
+}

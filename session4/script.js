@@ -76,3 +76,50 @@
 //         console.log("Nhập sai");      
 // };
 
+
+
+//1: Nhập 1 năm, kiểm tra xem năm đó có bao nhiêu ngày:
+
+// let year = parseInt(prompt("Nhập năm:"));
+// if ((year % 4 === 0 && year % 100 !== 0) ||
+//     (year % 100 === 0 && year % 400 === 0)) {
+
+//         console.log(` Năm ${year} có 366 ngày.`);
+// }
+// else {
+//     console.log(` Năm ${year} có 365 ngày.`); 
+// }
+
+//2: Nhập 1 tháng trong năm, kiểm tra số ngày của tháng đó.
+
+// let month = parseInt(prompt("Nhập vào 1 tháng trong năm:"));
+// while ((12 < month) || (month <= 0)) {
+//     month = parseInt(prompt("Nhập sai tháng, Yêu cầu nhập đúng:"));
+// }
+// // console.log(month);
+// let year = parseInt(prompt("Nhập vào năm :"));
+
+// let arr = [1, 3, 5, 7, 8, 10, 12];
+// for (let i = 0; i < arr.length; i++) {
+//     const thang = arr[i];
+//       if (thang === month) {
+//         console.log(` Tháng ${month} có 31 ngày.`);     
+//     }
+// }
+// let arr2 = [4, 6, 9, 11];
+// for (let i = 0; i < arr2.length; i++) {
+//     const element = arr2[i];
+//     if (element === month) {
+//         console.log(` Tháng ${month} có 30 ngày.`);
+//     }
+// }
+// if ((month === 2) && ((year % 4 === 0 && year % 100 !== 0) ||
+//     (year % 100 === 0 && year % 400 === 0)))  {
+//     console.log(` Tháng ${month} có 29 ngày và phải là năm nhuận.`);   
+// }
+// if ((month === 2) && (!((year % 4 === 0 && year % 100 !== 0) ||
+//     (year % 100 === 0 && year % 400 === 0))))  {
+//     console.log(` Tháng ${month} có 28 ngày và không phải là năm nhuận.`);
+// }
+
+//3: 

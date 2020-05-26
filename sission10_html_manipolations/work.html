@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+<body class="table table-bordered">
+    <div class="container"> 
+        <h1>
+            Bảng thông tin điện thoại:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phones">
+                
+            </tbody>
+        </table>  
+
+    </div>
+    <div>
+        <h1>
+            Bảng sắp xếp theo Hãng:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonesbrand">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng sắp xếp theo Tên:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonesname">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng sắp xếp theo Giá tăng dần:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonespriceup">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng sắp xếp theo Giá giảm dần:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonespricedown">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h1>
+            Bảng lọc theo hãng SamSung:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonessamsung">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng lọc theo hãng Apple:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonesapple">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng lọc theo hãng Huawei:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phoneshuawei">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng lọc theo hãng Oppo:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonesoppo">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng lọc theo hãng Xiaomi:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phonesxiaomi">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng danh sách điện thoại từ 5tr tới 10tr:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phones5to10">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng danh sách điện thoại từ 10tr tới 20tr:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phones10to20">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>
+            Bảng danh sách điện thoại trên 20 triệu:
+        </h1>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ảnh</th>
+                    <th>Tên</th>
+                    <th>Hãng</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody id="phones20++">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="work.js"></script>
+</body>
+</html>

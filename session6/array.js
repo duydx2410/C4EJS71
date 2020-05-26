@@ -109,6 +109,7 @@
 
 // //4: Yêu cầu nhập 1 số N: 
 // //-a: Kiểm tra số N có trong mảng không.
+// let arr = [1,2,8,5,9,3];
 // let isExist = false;
 // let N = Number(prompt("Nhập giá trị N:"));
 
@@ -125,9 +126,9 @@
 //     console.log("Không tồn tại");   
 // }
 
-// //-b: In ra các số thuộc mảng < N
+//-b: In ra các số thuộc mảng < N
 // for (let i = 0; i < N; i++) {
-//     const element = array[i];
+//     const element = arr[i];
     
 // }
 // if(arr[i] < N) {
@@ -150,23 +151,176 @@
 // arr.sort();//tăng dần.
 // arr.reverse(); // đảo ngược thứ tự để tạo giảm dần.
 // // Thuật toán:
-let arr = [6,7,3,2,9];
+// let arr = [6,7,3,2,9];
 
-for (let i = 0; i < arr.length - 1; i++) {
-    for (let j = i + 1; j < arr.length; j++) // lấy sau vị trí 1 cấp, =>
-     {
-         if (arr[i] > arr[j]) {
-             //đổi chỗ
-             let temp = arr[i];
-             arr[i] = arr[j];
-             arr[j] = temp;
-         }
-        
-    }
-    
-}
-console.log(arr);
+// for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) // lấy sau vị trí 1 cấp, =>
+//      {
+//          if (arr[i] > arr[j]) {
+//              //đổi chỗ
+//              let temp = arr[i];
+//              arr[i] = arr[j];
+//              arr[j] = temp;
+//          }     
+//     } 
+// }
+// console.log(arr);
 // muốn sắp xếp ngước lại thì đảo dấu.
+// for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if( arr[i] < arr[j]) {
+//             let temp = arr[j];
+//             arr[j] = arr[i];
+//             arr[i] = temp;
+//         }   
+//     }
+// }
+// console.log(arr);
+// console.log(` Số lớn thứ 2: ${arr[1]}`);
+
+
+// 1: Tính tổng các phần tử của 1 mảng:
+
+// let arr = [ 1, 6, 3, 8, 7];
+// let s = 0;
+// // for (let i = 0; i < arr.length; i++) {
+// //     s = s + arr[i];
+// // }
+// console.log(arr);
+
+// console.log(` Tổng các phần tử trong mảng: ${s}`);
+
+// // 2: Tính trung bình các phần tử của mảng:
+// console.log(` Trung bình các phần tử của mảng: ${s/arr.length}`);
+// 3: Tìm số lớn nhất, nhỏ nhất:
+// let maxInNumbers = Math.max.apply(Math, arr);
+// let len = arr.length;
+//  let max = - Infinity;
+//      while (len--) {
+//      if (arr[len] > max) {
+//         max = arr[len];
+//              }
+//         }
+// console.log(` Số lớn nhất : ${max}`);
+
+
+
+// let minInNumbers = Math.min.apply(Math, arr);
+// let len1 = arr.length;
+// let min = Infinity;
+//     while (len1--) {
+//         if(arr[len1] < min) {
+//             min = arr[len1];
+//         }
+//     }
+// console.log(` Số Min : ${len1}`);
+    
+
+// console.log(` Số lớn nhất trong mảng là: ${maxInNumbers}`);
+// console.log(` Số nhỏ nhất trong mảng là: ${minInNumbers}`);
+// //4: Sắp xếp mảng:
+
+// let arrXuoi = arr.sort();
+// console.log(` Sắp xếp mảng: ${arrXuoi}`);
+// console.log(` Số nhỏ thứ 2 là: ${arrXuoi[1]}`);
+
+
+// // //5: Tìm số lớn thứ 2, nhỏ thứ 2
+
+
+// let arrNguoc = arrXuoi.reverse();
+// console.log(` Sắp xếp ngược : ${arrNguoc}`);
+// console.log(` Số lớn thứ 2 là: ${arrNguoc[1]}`)
+
+//6: Tìm các số trong mảng lớn hơn N nhập từ bàn phím:
+
+
+// xác định N có thuộc mảng ko
+// let isExist = false;
+// let N = parseInt(prompt("Nhập giá trị N:"));
+
+// for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+
+//     if(element === N) {
+//         isExist = true;
+//         break;
+//     }
+// }
+// if (isExist) {
+//     console.log(` Có tồn tại ${N} trong mảng`);   
+// } else {
+//     console.log(` Không tồn tại ${N} trong mảng`);  
+// }
+// // in các số nhỏ hơn N
+// // for (let i = 0; i < N; i++) {
+// //     const element = arr[i];   
+// // if (arr[i] < N ) {
+// //     console.log(arr[i]);
+// //     }
+// // }
+// //In các sô lớn hơn N:
+// for (let i = 0; i < N; i++) {
+//     const el = arr[i];
+    
+//     if (arr[i] > N) {  
+//         console.log(arr[i]);   
+//     }
+// }
+
+
+// Cho 1 mảng : ["Javascript" , "Html" , "Css" , "Pascal"], Nhập 1 giá trị từ bàn phím,
+//tìm các giá trị trong mảng chứ từ nhập vào.
+
+// let arr = ["Javascript", "Html", "Css", "Pascal"];
+// let searchKey = prompt("Nhập giá trị:");
+// console.log(`=======Tìm giá trị=======`);
+// console.log(`===Kết quả tìm kiếm "${searchKey}" ===`);
+
+// for (const keyName of arr) {
+//     if(keyName.toLowerCase().includes(searchKey.toLowerCase())) {
+//         for (const key in keyName) {
+//             if (keyName.hasOwnProperty(key)) {
+//                 const value = keyName[key];
+//                 console.log("\t" + key + ": " + value);
+                
+//             }
+//             // console.log('\t --- \t --- ');
+            
+//         }
+//     }
+// }
+
+
+//8. Đảo ngược chuỗi nhập vào
+// let str = 'Hello world';
+// let arr = str.split("");
+// console.log(arr.reverse().join(""));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        
+   
+
+
 
 
 

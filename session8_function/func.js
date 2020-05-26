@@ -1,70 +1,62 @@
-// let myInfo = {
-//   "name": "Hung",
-//   "name": "Hunggggggggggggg",
-//   'age': 20,
-//   country: 'Vietnam',
-// };
-// // console.log(myInfo);
-// myInfo['phone'] = '0123456789';
-// myInfo.school = 'DH BK';
-// myInfo.age = 30;
-// delete myInfo.name;
+//khai báo
+// function helloworld() {
+//     console.log("Hello from function");
+// }
+// gọi
+// helloworld();
+// helloworld();
 
-// for (const key in myInfo) {
-//   if (myInfo.hasOwnProperty(key)) {
-//     const element = myInfo[key];
-//     console.log(key + ": " + element);
-//   }
-// }
+// khai báo function sử dụng tham số:
 
-// I. Khai báo 1 object, chứa thông tin 1 điện thoại:
-// chứa tên, giá, hãng sx
-// 1. in thông tin đt ra màn hình
-// 2. cho người dùng nhập thêm năm sản xuất của đt này
-// 3. cho ngdung sửa 1 value của đt này
-// 4. nhập 1 key, xóa thông tin này trong đt
-// let phone = {
-//   'name': 'Galaxy Note',
-//   price: 10e6,
-//   'brand': 'samsung',
+// function xinChao(userName){// biến này là tham số đại diện
+//     console.log(`Xin chào ${userName}`);
 // }
-// for (const key in phone) {
-//   const element = phone[key];
-//   console.log(key + ": " + element);
-// }
+// xinChao("Duy");
+// xinChao("Linh");
+// xinChao("Trang");
 
-// let releaseDate = parseInt(prompt("Nhập năm sản xuất"));
-// phone.releaseYear = releaseDate;
-// phone['releaseYear'] = releaseDate;
 
-// console.log("\n========= Thêm thành công ========\n");
-// for (const key in phone) {
-//   const element = phone[key];
-//   console.log(key + ": " + element);
+//VD: Tính tổng 2 số:
+// function tong2(a1,a2) {
+//     console.log(a1);
+//     console.log(a2);
+    
+//     let sum = a1 + a2;
+//     console.log(` Tổng 2 số là: ${sum}`);   
 // }
+// tong2(2, 3);
 
-// let editKey = prompt("Bạn muốn sửa gì?"); //name
-// while (!phone.hasOwnProperty(editKey)) {
-//   editKey = prompt("Bạn muốn sửa gì???");
+// function tinhTong3(a1, a2) {
+//     let s = a1 + a2;
+//     return s;
 // }
-// phone[editKey] = prompt("Giá trị mới");
-// console.log("\n========= Sửa thành công ========\n");
-// for (const key in phone) {
-//   const element = phone[key];
-//   console.log(key + ": " + element);
+// let n = tinhTong3(5, 6);
+// console.log(n);
+
+//VD: viết function đầu vào nhận 1 mảng, tính tổng các giá trị 
+
+// function tinhTong4(a) {
+//     // if (typeof a == "array") {
+//     let s = 0;
+//     for (let i = 0; i < a.length; i++) {
+//         let s = s + a[i];   
+//     }
+//         return s;
+//         //} else {
+//             // return 0;
+//         //}
 // }
-// let removeKey = prompt("Bạn muốn xóa gì?"); //name
-// while (!phone.hasOwnProperty(removeKey)) {
-//   removeKey = prompt("Bạn muốn xóa gì???");
-// }
-// delete phone[removeKey];
-// console.log("\n========= Xóa thành công ========\n");
-// for (const key in phone) {
-//   const element = phone[key];
-//   console.log(key + ": " + element);
-// }
+// let sum = tinhTong4([1,2,3,4,5,6]);
+// console.log(sum);
+
+
+// function
+
+
+
 
 // II. Khai báo 1 mảng chứa thông tin 3 đt, mỗi đt gồm:
+
 // tên, giá, hãng sx
 // 1. in ds đt ra màn hình (không sử dụng log mảng và log object)
 // 2. cho ngdung thêm 1 đt mới vào mảng, bằng cách cho ngdung nhập tên, giá, hãng rồi thêm đt mới này vào mảng
@@ -92,7 +84,10 @@
 //     brand: 'Apple'
 //   },
 // ];
-// // In ra
+
+// inDanhSachDT();
+// themMoi();
+// // // In ra
 // for (let i = 0; i < listPhone.length; i++) { // mảng
 //   const phone = listPhone[i]; // object
 //   console.log(i + 1);
@@ -104,6 +99,7 @@
 // }
 
 // thêm mới
+
 // let newPhoneName = prompt("Tên đt mới:");
 // let newPhonePrice = Number(prompt("Giá đt mới:"));
 // let newPhoneBrand = prompt("Hãng đt mới:");
@@ -233,7 +229,94 @@
 //   console.log('\t --- \t --- ');
 // }
 
-// Kiến thức mới: 
+
+// function inDanhSachDT() {
+//     for (let i = 0; i < listPhone.length; i++) { // mảng
+//         const phone = listPhone[i]; // object
+//         console.log(i + 1);
+//         for (const key in phone) {
+//           const value = phone[key];
+//           console.log("\t" + key + ": " + value);
+//         }
+//         console.log('\t --- \t --- ');
+//       }
+// }
+
+// function themMoi() {
+//     let newPhoneName = prompt("Tên đt mới:");
+// let newPhonePrice = Number(prompt("Giá đt mới:"));
+// let newPhoneBrand = prompt("Hãng đt mới:");
+// let newPhone = {
+//   name: newPhoneName,
+//   price: newPhonePrice,
+//   brand: newPhoneBrand,
+// };
+// listPhone.push(newPhone);
+// console.log("======= Thêm thành công ======");
+// // in ra
+// for (let i = 0; i < listPhone.length; i++) {
+//   const phone = listPhone[i];
+//   console.log(i + 1);
+//   for (const key in phone) {
+//     const value = phone[key];
+//     console.log("\t" + key + ": " + value);
+//   }
+//   console.log('\t --- \t --- ');
+// }
+// }
+
+// function sttSua() {
+      
+// }
+
+// ĐỆ QUI
+
+//VD 
+// function tinhGiaiThua(n) {
+//     if(n === 0) {
+//         return 1;
+//     }
+
+//     return n * tinhGiaiThua(n - 1)
+// }
+// let gT = tinhGiaiThua(5);
+// console.log(gT);
+
+
+// fibonacci:
+
+// function fibonacci(n) {
+//     if(n === 1 || n === 2) {
+//         return 1;
+//     }
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+// console.log(fibonacci(4));
+
+
+// let fruits = ["Banana", "Orange", "Apple", "Mango"];
+// // console.log(fruits.toString());xuất ra chuỗi các phần tử trong mảng cách nhau bởi dấu ,
+// // console.log(fruits.join("-")); tác dụng như toString() nhưng thay đổi được dấu phân các các phần tử
+// // let fruit = fruits.pop(); //xóa đi 1 phần tử trong mảng phía cuối cùng
+// // console.log(fruit);
+// // console.log(fruits);
+// // fruits.push("Xoai");//thêm 1 phần tử vào mảng phía cuối cùng
+// // console.log(fruits.toString());
+// // console.log(fruits.shift());//xóa đi 1 phần tử trong mảng phái đầu
+// // fruits.unshift("Lemon");// thêm 1 phần tử vào mảng phía đầu, tăng chiều dài mảng
+// // console.log(fruits);
+// fruits[0] = "Mia";
+// console.log(fruits);
+// // nối phần tử
+// fruits[fruits.length] = "Khoai";// tương đương với unshift
+// console.log(fruits);
+// // delete fruits[0];
+// // console.log(fruits);// delete để lại giá trị trống trong mảng
+// fruits.splice(1, 0, "Táo tầu", "Nho"); //có thể dùng để thêm giá trị (vị trí, số lượng xóa, "chuỗi thêm")
+// console.log(fruits);
+
+
+/// Kiến thức mới: 
 // 1. Function. // function không tham số, có tham số, có giá trị trả về
 // 2. Array methods:
 // - Array.filter()
@@ -241,16 +324,13 @@
 // - array.indexOf(), lastIndexOf();
 // - array.every(), array.some();
 
-//1: Tạo 1 object chứa thông tin của person gồm key: name, age, favorite với các giá trị tương ứng:"Phạm Văn A",20,["Javascript", "Html", "Css"].
 
-let info = {
-  name: "Phạm Văn A",
-  age: 20, 
-  favorite: ["Javascript", "Html", "Css"],
-};
-console.log(info);
-info.school = "ĐH Quốc Gia HN";
 
-let newKey = prompt("Nhập key mới:");
-let newValue = prompt("Nhập giá trị mới:")
-info.push(newKey,newValue);
+
+
+
+
+
+
+
+
